@@ -1,23 +1,16 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Componente from './components/Componente'
 
 function App() {
-  let name = "Andres"
-  let auth = true;
-  let estaciones = ["primavera","verano","otoño","invierno"]
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>My Name is {name}</h1>
-        <p>{auth ? "El usuario esta logueado" : "El usuario No esta logueado"}</p>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <ul>
-          {estaciones.map((el, i) => 
-           <li key={i}>{el}</li> )}
-        </ul>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -27,6 +20,9 @@ function App() {
           Learn React
         </a>
       </header>
+       <section>
+        <Componente msg="Hola soy un componente desde una props"/>
+       </section>
     </div>
   );
 }
