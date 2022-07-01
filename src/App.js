@@ -3,6 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 import Componente from './components/Componente'
 import Propiedades from './components/props';
+import Estado from './components/Estado';
+import RenderizadoCondicional from './components/RenderizadoCondicional';
+import RenderizadoElementos from './components/RenderizadoElementos';
+import { EventosES6, EventosES7, MasSobreEventos } from './components/Eventos';
+import { Padre } from './components/ComunicacionComponentes';
+import CicloVida from './components/CicloVida';
 
 function App() {
   return (
@@ -35,6 +41,22 @@ function App() {
           elementoReact = {<i>Esto es un elemento de react</i>}
           componenteReact = {<Componente msg="Hola soy un componente cargado como una prop"/>}
           />
+          <hr />
+          <Estado />
+          <hr />
+          <RenderizadoCondicional />
+          <hr />
+          <RenderizadoElementos/>
+          <hr />
+          <EventosES6 />
+          <hr />
+          <EventosES7 />
+          <hr />
+          <MasSobreEventos/>
+          <hr />
+          <Padre />
+          <hr />
+          <CicloVida />
        </section>
       </header>
     </div>
